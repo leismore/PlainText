@@ -24,6 +24,57 @@ const SP2     = '\x20\x20';
 
 module.exports = class PlainText
 {
+  constructor(text, lb=canoLB)
+  {
+    try
+    {
+      text = PlainText.unifyLB(text, lb);
+      if (text === null)
+      {
+        this.lb   = lb;
+        this.text = null;
+      }
+      else
+      {
+        this.lb   = lb;
+        this.text = text.split(lb);
+        this.text.pop();
+      }
+    }
+    catch(e)
+    {
+      throw e;
+    }
+
+    Object.defineProperty(this, 'text', {
+      value:        this.text,
+      writable:     true,
+      enumerable:   false,
+      configurable: false
+    });
+
+    Object.defineProperty(this, 'lb', {
+      value:        this.lb,
+      writable:     true,
+      enumerable:   false,
+      configurable: false
+    });
+
+    Object.preventExtensions(this);
+  }
+
+  toString()
+  {
+    if (this.text === null)
+    {
+      return null;
+    }
+    else
+    {
+      return this.text.join(this.lb) + this.lb;
+    }
+  }
+
   static removeLB(text, rep=SP2)
   {
     /**
