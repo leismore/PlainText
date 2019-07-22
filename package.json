@@ -1,6 +1,6 @@
 {
   "name": "@leismore/plaintext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NodeJS package: PlainText class.",
   "main": "index.js",
   "scripts": {

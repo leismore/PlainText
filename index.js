@@ -67,7 +67,7 @@ module.exports = class PlainText
   {
     if (this.text === null)
     {
-      return null;
+      return '';
     }
     else
     {
