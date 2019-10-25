@@ -2,6 +2,10 @@
 
 A NodeJS package: PlainText class.
 
+# Donation
+
+Buy me a coffee via [![PayPal Donation](https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=SPPJPYRY4D6WC&item_name=Give+people+an+option+to+support+my+open+source+software.&currency_code=AUD&source=url)
+
 # Motivation
 
 Provide a general purpose NodeJS class for handling plain text. It provides:

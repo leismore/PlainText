@@ -17,8 +17,13 @@ const SP2     = '\x20\x20';
 class PlainText
 {
   public text:Text = null;
-  public lb:LB     = canoLB;
+  public lb:LB     = canoLB;  // Line-break
 
+  /**
+   * @param {string} text
+   * @param {LB}     [lb=canoLB] - Line break
+   * @throw {Error}              - not_string
+   */
   public constructor(text:string, lb:LB=canoLB)
   {
     try
