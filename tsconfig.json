@@ -1,7 +1,7 @@
 {
   "compilerOptions":
   {
-    "lib":              ["ES2015"],
+    "lib":              ["ES2016"],
     "target":            "ES2015",
     "baseUrl":           "./src",
     "outDir":            "./dist",
