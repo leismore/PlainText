@@ -1,6 +1,6 @@
 {
   "name": "@leismore/plaintext",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "A NodeJS package: PlainText class.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -17,7 +17,7 @@
     "Linebreak"
   ],
   "author": "Kyle Chine",
-  "license": "MIT",
+  "license": "AGPL-3.0-only",
   "bugs": {
     "url": "https://github.com/leismore/PlainText/issues"
   },
