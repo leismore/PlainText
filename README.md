@@ -2,34 +2,35 @@
 
 A NodeJS package: PlainText class.
 
-# Donation
+## Donation
 
 Buy me a coffee via [![PayPal Donation](https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=SPPJPYRY4D6WC&item_name=Give+people+an+option+to+support+my+open+source+software.&currency_code=AUD&source=url)
 
-# Motivation
+## Motivation
 
 Provide a general purpose NodeJS class for handling plain text. It provides:
 
 1. Line-breaks unification
 2. Combining multiple-line-text into a single-line-text.
 
-# Installation
+## Installation
 
 `npm install @leismore/plaintext`
 
-# Example
+## Test
+
+`npm test`
+
+## Example
 
 ```typescript
 import {PlainText} from '@leismore/plaintext';
-// Or
-const PlainText = require('@leismore/plaintext').PlainText;
-
 let text = `First line \r\n Second Line \n More lines...`;
 text = new PlainText(text, '\r\n');
 console.log(String(text));
 ```
 
-# Class Structure
+## Class Structure
 
 ```typescript
 class PlainText
@@ -73,10 +74,10 @@ const xmlLB   = '\n';
 const SP2     = '\x20\x20';
 ```
 
-# License
+## License
 
-MIT
+GNU Affero General Public License v3.0
 
-# Authors
+## Authors
 
 * [Kyle Chine](https://www.kylechine.name) (Initial Author / July 4, 2019)
