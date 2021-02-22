@@ -130,4 +130,4 @@ class PlainText
   }
 }
 
-export {PlainText};
+export { PlainText, LB, Text, canoLB, xmlLB, SP2 };
