@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import { PlainText, canoLB, SP2 } from '../src/index';
+import { PlainText, PlainText_canoLB as canoLB, PlainText_SP2 as SP2 } from '../src/index';
 
 const CR = '\r';
 const LF = '\n';
