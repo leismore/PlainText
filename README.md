@@ -35,43 +35,43 @@ console.log(String(text));
 ```typescript
 class PlainText
 {
-  public text:Text = null;   // Array: one line per element
-  public lb:LB     = canoLB; // Line-break
+  public text:PlainText_Text = null;             // Array: one line per element
+  public lb:PlainText_LB     = PlainText_canoLB; // Line-break
 
   /**
    * @param      {string}        text
-   * @param      {LB}            [lb=canoLB]   - Line-break
+   * @param      {PlainText_LB}  [lb=PlainText_canoLB] - Line-break
    * @exception  {Error}         - not_string
    */
-  public constructor(text:string, lb:LB=canoLB)
+  public constructor(text:string, lb:PlainText_LB=PlainText_canoLB)
 
   public toString():string
 
   /**
    * Unify line-breaks
    * @param      {string}        text
-   * @param      {LB}            [lb=canoLB]  - Line-break
+   * @param      {PlainText_LB}  [lb=PlainText_canoLB] - Line-break
    * @returns    {string | null} - Empty string will be converted to null
    * @exception  {Error}         - not_string
    */
-  public static unifyLB(text:string, lb:LB=canoLB): string|null
+  public static unifyLB(text:string, lb:PlainText_LB=PlainText_canoLB): string|null
 
   /**
    * Remove line breaks
    * @param      {string} text
-   * @param      {string} [rep=SP2]   - Replacement for line-breaks
-   * @returns    {string | null}      - Empty string converted to null
-   * @exception  {Error}   not_string | invalid_replacement
+   * @param      {string} [rep=PlainText_SP2] - Replacement for line-breaks
+   * @returns    {string | null}              - Empty string converted to null
+   * @exception  {Error}                      - not_string | invalid_replacement
    */
-  public static removeLB(text:string, rep:string=SP2): string|null
+  public static removeLB(text:string, rep:string=PlainText_SP2): string|null
 }
 
-type Text = ( string[] | null );
-type LB = ( '\r' | '\n' | '\r\n' | '\n\r' );
+type PlainText_Text = ( string[] | null );
+type PlainText_LB   = ( '\r' | '\n' | '\r\n' | '\n\r' );
 
-const canoLB  = '\r\n';
-const xmlLB   = '\n';
-const SP2     = '\x20\x20';
+const PlainText_canoLB  = '\r\n';
+const PlainText_xmlLB   = '\n';
+const PlainText_SP2     = '\x20\x20';
 ```
 
 ## License
